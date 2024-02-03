@@ -11,7 +11,7 @@
         let e = document.getElementById("e");
         while (true){
             let t = Math.floor((Math.random() * 4 + 1))
-            document.setTimeout((t) => {
+            e.setTimeout((t) => {
                 console.log(t);
                 e.textContent = t % 2 ? ":3" : ">:3";
             }, t * 1000);
