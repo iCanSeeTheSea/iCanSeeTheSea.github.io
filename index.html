@@ -7,14 +7,13 @@
 </head>
 <body>
     <p id="e">:3</p>
+    <button onclick="hehe"></button>
     <script>
         let e = document.getElementById("e");
-        while (true){
-            let t = Math.floor((Math.random() * 4 + 1))
-            out = setTimeout((t) => {
-                console.log(t);
-                e.textContent = t % 2 ? ":3" : ">:3";
-            }, t * 1000);
+        function hehe(){
+            let r = Math.floor(Math.random() * 2) + 1;
+            console.log(r);
+            e.textContent = r % 2 ? ":3" : ">:3";
         }
     </script>
 </body>
