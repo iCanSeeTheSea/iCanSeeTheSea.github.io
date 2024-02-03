@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:3</title>
+</head>
+<body>
+    <p id="e">:3</p>
+    <script>
+        let e = document.getElementById("e");
+        while (true){
+            let t = Math.floor((Math.random() * 4 + 1))
+            document.setTimeout((t) => {
+                e.textContent = t % 2 ? ":3" : ">:3";
+            }, t * 1000);
+        }
+    </script>
+</body>
+</html>
