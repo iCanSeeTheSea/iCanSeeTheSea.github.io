@@ -7,14 +7,7 @@
 </head>
 <body>
     <p id="e">:3</p>
-    <button onclick="hehe()">Press me!</button>
-    <script>
-        let e = document.getElementById("e");
-        function hehe(){
-            let r = Math.floor(Math.random() * 2) + 1;
-            console.log(r);
-            e.textContent = r % 2 ? ":3" : ">:3";
-        }
-    </script>
+    <button onclick="hehe()" id="b">Press me!</button>
+    <script> function hehe(){[document.getElementById("e").textContent, document.getElementById("b").textContent] = ((x)=>{return ((Math.floor(Math.random() * x) + 1) % x ? ":3" + " Again" + "!".repeat((document.getElementById("b").textContent.match(/!/g) || []).length + 1) : ">:3" + " >:3").split(" ")})(17);}</script>
 </body>
 </html>
